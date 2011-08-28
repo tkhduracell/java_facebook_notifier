@@ -48,7 +48,7 @@ public class FacebookChecker {
                     long bef = System.currentTimeMillis();
                     String response = FacebookChecker.checkAccount(a);
                     long after = System.currentTimeMillis();
-                    String date = new Date().toString() + " took " + (after - bef) + " ms";
+                    String date = new Date().toString() + " it took " + (after - bef) + " ms";
                     Logger.getLogger(FacebookChecker.class.getName()).log(Level.FINE, date);
                     for (Notifyer n : notfiers) {
                         if (!response.isEmpty()) {
