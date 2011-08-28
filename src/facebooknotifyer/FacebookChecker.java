@@ -27,7 +27,7 @@ public class FacebookChecker {
 
     private final ArrayList<FacebookAccount> accounts;
     private final ArrayList<Notifyer> notfiers;
-    private final int DELAY = 10000;
+    private static final int DELAY = 10000;
     private final Timer timer;
 
     public FacebookChecker(ArrayList<FacebookAccount> accounts, Notifyer notfier) {
