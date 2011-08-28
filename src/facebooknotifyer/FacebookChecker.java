@@ -27,7 +27,7 @@ public class FacebookChecker {
 
     private final ArrayList<FacebookAccount> accounts;
     private final ArrayList<Notifyer> notfiers;
-    private final int delay = 10000;
+    private final int DELAY = 10000;
     private final Timer timer;
 
     public FacebookChecker(ArrayList<FacebookAccount> accounts, Notifyer notfier) {
@@ -59,7 +59,7 @@ public class FacebookChecker {
                 }
             }
         };
-        this.timer.schedule(task, delay);
+        this.timer.schedule(task, DELAY);
         for (Notifyer n : notfiers) {
             n.onStatusChange(StatusType.RUNNING);
         }
