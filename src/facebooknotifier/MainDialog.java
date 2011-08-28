@@ -1,13 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/*
- * MainDialog.java
- *
- * Created on Aug 24, 2011, 11:49:58 PM
- */
 package facebooknotifier;
 
 import java.awt.AWTException;
