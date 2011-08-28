@@ -8,7 +8,7 @@
  *
  * Created on Aug 24, 2011, 11:53:31 PM
  */
-package facebooknotifyer;
+package facebooknotifier;
 
 /**
  *

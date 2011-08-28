@@ -8,7 +8,7 @@
  *
  * Created on Aug 24, 2011, 11:49:58 PM
  */
-package facebooknotifyer;
+package facebooknotifier;
 
 import java.awt.AWTException;
 import java.awt.Image;

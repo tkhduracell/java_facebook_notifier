@@ -1,4 +1,4 @@
-package facebooknotifyer;
+package facebooknotifier;
 
 import java.awt.SplashScreen;
 import java.io.EOFException;
