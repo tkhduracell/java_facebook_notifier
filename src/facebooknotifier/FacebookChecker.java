@@ -110,12 +110,12 @@ public class FacebookChecker {
                 sb.append(inputLine);
             }
             in.close();
-            Logger.getLogger(FacebookChecker.class.getName()).log(Level.FINE, "Fetching JSON done!");
+            Logger.getLogger(FacebookChecker.class.getName()).log(Level.FINE, "Fetching JSON 100%!");
 
             Logger.getLogger(FacebookChecker.class.getName()).log(Level.FINE, "Serializing...");
             JSON jso = JSONSerializer.toJSON(sb.toString());
             JSONObject json = (JSONObject) jso;
-            Logger.getLogger(FacebookChecker.class.getName()).log(Level.FINE, "Serializing...done!");
+            Logger.getLogger(FacebookChecker.class.getName()).log(Level.FINE, "Serializing...100%!");
 
             if (fa.getTitle() == null || fa.getTitle().isEmpty()) {
                 JSONObject title = json.getJSONObject("title");
