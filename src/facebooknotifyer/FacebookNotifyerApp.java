@@ -57,8 +57,6 @@ public class FacebookNotifyerApp {
             }
         });
         
-        //list.add(new FacebookAccount("757059487", "AWivgUpGBbP_7wRv"));
-        
     }
     
     public static boolean fetchAccounts(List<FacebookAccount> list){
