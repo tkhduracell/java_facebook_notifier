@@ -21,14 +21,13 @@ import net.sf.json.JSONObject;
 import net.sf.json.JSONSerializer;
 
 /**
- *
  * @author Filip
  */
 public class FacebookChecker {
 
     private final ArrayList<FacebookAccount> accounts;
     private final ArrayList<Notifyer> notfiers;
-    private final int delay = 60000;
+    private final int delay = 10000;
     private final Timer timer;
 
     public FacebookChecker(ArrayList<FacebookAccount> accounts, Notifyer notfier) {
