@@ -1,11 +1,11 @@
 --------------------------
 
-	Facebook-Notifyer
+	Facebook-Notifier
 
 --------------------------
 
 
-A lightweight javaprogram that notifies of new notifications from the social network Facebook.
+A lightweight Java program that notifies of new notifications from the social network Facebook.
 
 Features:
  * Multiple accounts
@@ -13,4 +13,4 @@ Features:
  * Stays in tray
  * Add account via RSS-feed string
  * Add account via id & key
- (*) Set delay between notification checks
+(*) Set delay between notification checks
