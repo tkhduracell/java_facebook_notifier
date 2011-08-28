@@ -99,7 +99,7 @@ public class FacebookChecker {
                 fa.getId(),
                 fa.getKey());
         try {
-            Logger.getLogger(FacebookChecker.class.getName()).log(Level.FINE, "Fetching json");
+            Logger.getLogger(FacebookChecker.class.getName()).log(Level.FINE, "Fetching JSON...");
             BufferedReader in = new BufferedReader(
                     new InputStreamReader(
                     new URL(url).openStream()));
@@ -110,12 +110,12 @@ public class FacebookChecker {
                 sb.append(inputLine);
             }
             in.close();
-            Logger.getLogger(FacebookChecker.class.getName()).log(Level.FINE, "done!");
+            Logger.getLogger(FacebookChecker.class.getName()).log(Level.FINE, "Fetching JSON done!");
 
             Logger.getLogger(FacebookChecker.class.getName()).log(Level.FINE, "Serializing...");
             JSON jso = JSONSerializer.toJSON(sb.toString());
             JSONObject json = (JSONObject) jso;
-            Logger.getLogger(FacebookChecker.class.getName()).log(Level.FINE, "done!");
+            Logger.getLogger(FacebookChecker.class.getName()).log(Level.FINE, "Serializing...done!");
 
             if (fa.getTitle() == null || fa.getTitle().isEmpty()) {
                 JSONObject title = json.getJSONObject("title");
@@ -134,7 +134,7 @@ public class FacebookChecker {
         } catch (MalformedURLException mex) {
             Logger.getLogger(FacebookChecker.class.getName()).log(Level.SEVERE, null, mex);
         } catch (IOException iex) {
-            Logger.getLogger(FacebookChecker.class.getName()).log(Level.SEVERE, "IOerror", iex);
+            Logger.getLogger(FacebookChecker.class.getName()).log(Level.SEVERE, "Couldn't connect to server", iex);
         } catch (Exception ex) {
             Logger.getLogger(FacebookChecker.class.getName()).log(Level.SEVERE, ex.getLocalizedMessage(), ex);
         }
